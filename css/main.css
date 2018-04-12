@@ -1,0 +1,384 @@
+/*	Global
+============================*/
+
+* {
+	box-sizing: border-box;
+}
+
+html,body {
+	height: 100%;
+}
+
+body{
+	/*-- font: font-style font-variant font-weight font-size/line-height font-family;  :Css-Trickes Site --*/
+	font: normal 16px/150% Roboto;
+	color: #02b3e4;
+	background-color: #151714;
+	padding: 50px 0 0;
+}
+
+
+
+/* My Framework
+============================*/
+/* Headings */
+.title-heading {
+	text-transform: capitalize;
+	font-weight: bold;
+	padding: 10px;
+	margin-top: 0px;
+	position: relative;
+}
+
+.title-heading:before {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 8px;
+    width: 107px;
+    height: 4px;
+    background-color: #ed794b;
+}
+
+.title-heading:after {
+	content: "";
+    position: absolute;
+    top: 53px;
+    left: 8px;
+    width: 60px;
+    height: 4px;
+    background-color: #02b3e4;
+}
+
+
+/* Pragraphes */
+.title-text {
+	padding: 20px;
+	white-space: pre-line;
+}
+
+/* Buttons */
+.btn{
+	background-color: #061e26;
+	color: #fff;
+	border: none;
+	box-shadow: 0 1px 15px 1px rgba(6, 30, 38, 0.47);
+	outline: none;
+	transition: 0.3s all ease;
+	text-transform: capitalize;
+	font-size: 1.4em;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #0ccf0c;
+	box-shadow: 0 1px 15px 1px rgba(31, 209, 31, 0.78);
+	outline: none;
+	color: #fff;
+}
+
+/* Other */
+strong{
+	text-transform: capitalize;
+}
+
+/*	Header
+============================*/
+/* Navbar */
+.navbar{
+    background-color: #061e26;
+}
+
+.navbar .navbar-brand {
+	padding: 5px 15px;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+	background-color: #0ccf0c;
+	box-shadow: 0 1px 10px 1px rgba(31, 209, 31, 0.78);
+}
+
+.nav>li>a{
+	border-radius: 0 0 6px 6px;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+	background-color: #0ccf0c;
+	box-shadow: 0 1px 15px 1px rgba(31, 209, 31, 0.78);
+}
+
+
+
+.banner{
+	position: relative;
+	top: 0;
+	background: url(../images/header.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: calc(100vh - 135px)
+}
+
+.banner-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.banner-overlay--title {
+	position: absolute;
+	top: calc(50% - 100px);
+	bottom: auto;
+	left: 40px;
+}
+
+
+/*	My Skills Section
+============================*/
+.flex-container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.my-photo {
+	padding: 120px 0 0;
+	width: 350px;
+	margin: 0 auto;
+}
+
+
+.left-side {
+	padding: 100px 0 0;
+}
+
+.logos{
+	margin: -4px 0 0;
+}
+
+.logo-img {
+	width: 70px;
+	padding: 6px 0;
+    margin: -1px 0 0;
+    float: right;
+}
+
+.bar {
+	padding: 6px;
+}
+
+
+
+/*	Progress Bars colors
+============================*/
+.ps{
+	background-color: #5bd3fa;
+}
+
+.ai{
+	background-color: #f98715;
+}
+
+.html{
+	background-color: #ed794b;
+}
+
+.css{
+	background-color: #0396e5;
+}
+
+.js{
+	background-color: #edaf4b;
+}
+
+
+
+
+/*	Featured Work Section
+============================*/
+.featured-project--info .title h4{
+	padding: 11px 0;
+	margin: 0;
+}
+
+.featured-project--info {
+	padding: 10px;
+}
+
+.featured-project--photo {
+	padding: 10px;
+}
+
+
+
+/*	Contact Me Section
+============================*/
+.contact {
+	padding: 20px 0;
+}
+
+.form-wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contact_form {
+	padding: 10px 20px;
+}
+
+.input-group-addon{
+	background-color: #ed794b;
+	color: #fff;
+	border-color: #999;
+}
+
+
+/*	Footer
+============================*/
+.site-footer {
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: -5px;
+	background-color: #061e26;
+	height: 60px;
+	border-radius: 40px 40px 0 0;
+	color: #fff;
+}
+
+.site-footer--social-icons {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 10px;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.social--icons-link {
+	margin: 10px;
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+	transition: 0.3s all ease;
+}
+
+
+
+
+/*	Social Brands colors 				Source: brandcolors.net
+============================*/
+
+/* FaceBook */
+.social--icons-link:first-of-type:hover {
+	color: #3b5998;
+}
+
+/* Twitter */
+.social--icons-link:nth-of-type(2):hover {
+	color: #1da1f2;
+}
+
+/* gitHub */
+.social--icons-link:nth-of-type(3):hover {
+	color: #bd2c00;
+}
+
+/* CodePen */
+.social--icons-link:nth-of-type(4):hover {
+	color: #76daff;
+}
+
+/* Google */
+.social--icons-link:nth-of-type(5):hover {
+	color: #4285f4;
+}
+
+/* LinkedIn */
+.social--icons-link:last-of-type:hover {
+	color: #8d6cab;
+}
+
+.rights {
+	margin: 2px;
+    position: absolute;
+	left: 0;
+	right: 0;
+    bottom: 0;
+}
+
+.rights .fa-heart{
+	color: red;
+}
+
+
+/*	Media & screens
+============================*/
+
+@media all and (max-width: 768px) {
+	body {
+		font-size: 2em;
+	}
+
+	.flex-container {
+		flex-direction: column-reverse;
+	}
+
+	.bar {
+		padding: 28px 5px;
+	}
+
+	.my--info-name {
+		margin-top: 0;
+	}
+
+	.my-photo {
+		padding: 0;
+		width: 100%;
+	}
+
+	.logo-img {
+		width: 145px;
+	}
+
+	.form-wrapper {
+		width: 85%;
+	}
+}
+
+@media all and (max-width: 360px) {
+	body {
+		font-size: 1.4em;
+	}
+
+	.overlay--title-heading {
+		font-size: 30px;
+	}
+
+	.overlay--title-text {
+		font-size: 16px;
+	}
+
+	.left-side {
+		padding: 100px 10px 0 0;
+	}
+
+	.progress {
+		height: 10px;
+	}
+
+	.bar {
+		padding: 16px 5px;
+	}
+
+	.logos{
+		margin: -10px 0 0;
+	}
+}
